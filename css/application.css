@@ -212,10 +212,14 @@ header {
 
 .rafting {
   float: left;
+  cursor: pointer;
   width: 50%;
   height: 400px;
   background: url(../img/raft.jpg) center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; }
   @media (max-width: 900px) {
     .rafting {
       width: 100%; } }
@@ -228,6 +232,9 @@ header {
 
 .base-camp {
   float: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   width: 25%;
   height: 400px;
   background: url(../img/basecamp.jpg) center center no-repeat;
@@ -244,6 +251,9 @@ header {
 
 .backpacking {
   float: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   width: 25%;
   height: 400px;
   background: url(../img/backpacking.jpg) center center no-repeat;
@@ -260,6 +270,9 @@ header {
 
 .canoe {
   float: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   width: 25%;
   height: 400px;
   background: url(../img/canoe.jpg) center center no-repeat;
@@ -276,6 +289,9 @@ header {
 
 .photography {
   float: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   width: 25%;
   height: 400px;
   background: url(../img/photo.jpg) center center no-repeat;
@@ -292,6 +308,9 @@ header {
 
 .custom {
   float: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   width: 50%;
   height: 400px;
   background: url(../img/custom.jpg) center center no-repeat;
@@ -305,5 +324,32 @@ header {
       height: 275px;
       width: 90%;
       margin: 50px auto; } }
+
+.trip {
+  align-self: flex-end;
+  margin: 1% 0 4% 4%;
+  font-size: 1.5em; }
+
+.border-top {
+  width: 50px;
+  margin-bottom: 15%;
+  border-top: 5px solid #dc7725; }
+
+object {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+  cursor: pointer;
+  background-color: #333333;
+  padding: 15px;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: transform 0.3s ease-in; }
+
+object:hover {
+  transform: scale(1.4); }
+
+.empty {
+  width: 25%; }
 
 /*# sourceMappingURL=application.css.map */
