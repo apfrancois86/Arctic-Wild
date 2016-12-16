@@ -1,6 +1,7 @@
 .container {
   .search-bar {
     font-family: 'Open Sans', sans-serif;
+    color: $light-gray;
     height: 75px;
     width: 100%;
     background-color: $dark-gray;
@@ -16,7 +17,9 @@
       width: 60%;
       padding-left: 55px;
       h3 {
+        cursor: pointer;
         padding-right: 35px;
+        transition: color 0.2s ease-in;
         &:nth-of-type(4) {
           border-right: 1px solid #FFF;
           padding-right: 18px;
@@ -25,11 +28,21 @@
           padding-right: 0;
           padding-left: 17px;
           color: $orange;
+          &:hover {
+            background-color: $light-gray;
+            color: #fff;
+          }
         }
+      }
+      h3:hover {
+        color:#fff;
       }
       span {
         font-size: 10px;
-        color: #FFF;
+        color: $light-gray;
+        &:hover {
+          color: #fff;
+        }
       }
     }
     .search-right {
@@ -37,6 +50,12 @@
       display: flex;
       justify-content: flex-end;
       padding-right: 55px;
+      font-size: 1.2em;
+      font-weight: bolder;
+      cursor: pointer;
+      h2{
+        padding-right: 10px;
+      }
     }
   }
   .rafting {

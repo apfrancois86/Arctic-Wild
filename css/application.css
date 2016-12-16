@@ -83,10 +83,10 @@ header {
       align-self: center; }
     header .header-center h1 {
       font-family: 'Source Sans Pro', sans-serif;
-      font-size: 5em;
+      font-size: 7em;
       padding-bottom: 20px; }
     header .header-center h2 {
-      font-size: 1.2em;
+      font-size: 1.5em;
       padding-bottom: 10px; }
 
 .small {
@@ -134,6 +134,7 @@ header {
 
 .container .search-bar {
   font-family: 'Open Sans', sans-serif;
+  color: #bdbdb7;
   height: 75px;
   width: 100%;
   background-color: #333333;
@@ -148,7 +149,9 @@ header {
     width: 60%;
     padding-left: 55px; }
     .container .search-bar .search-left h3 {
-      padding-right: 35px; }
+      cursor: pointer;
+      padding-right: 35px;
+      transition: color 0.2s ease-in; }
       .container .search-bar .search-left h3:nth-of-type(4) {
         border-right: 1px solid #FFF;
         padding-right: 18px; }
@@ -156,14 +159,26 @@ header {
         padding-right: 0;
         padding-left: 17px;
         color: #dc7725; }
+        .container .search-bar .search-left h3:nth-of-type(5):hover {
+          background-color: #bdbdb7;
+          color: #fff; }
+    .container .search-bar .search-left h3:hover {
+      color: #fff; }
     .container .search-bar .search-left span {
       font-size: 10px;
-      color: #FFF; }
+      color: #bdbdb7; }
+      .container .search-bar .search-left span:hover {
+        color: #fff; }
   .container .search-bar .search-right {
     width: 40%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 55px; }
+    padding-right: 55px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer; }
+    .container .search-bar .search-right h2 {
+      padding-right: 10px; }
 .container .rafting {
   width: 50%; }
 
