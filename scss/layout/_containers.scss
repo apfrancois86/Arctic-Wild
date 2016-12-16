@@ -210,6 +210,11 @@ object {
   opacity: 0.7;
   transition: transform 0.3s ease-in;
 }
-object:hover {
-  transform: scale(1.4);
+.container {
+  div:hover object {
+    transform: scale(1.4);
+  }
 }
+// object:hover {
+//
+// }

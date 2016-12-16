@@ -352,7 +352,7 @@ object {
   opacity: 0.7;
   transition: transform 0.3s ease-in; }
 
-object:hover {
+.container div:hover object {
   transform: scale(1.4); }
 
 /*# sourceMappingURL=application.css.map */
