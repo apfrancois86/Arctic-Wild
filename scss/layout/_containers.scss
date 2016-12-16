@@ -1,0 +1,45 @@
+.container {
+  .search-bar {
+    font-family: 'Open Sans', sans-serif;
+    height: 75px;
+    width: 100%;
+    background-color: $dark-gray;
+    display: flex;
+    // justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    @media (max-width:$brk-1) {
+      display: none;
+    }
+    .search-left {
+      display: flex;
+      width: 60%;
+      padding-left: 55px;
+      h3 {
+        padding-right: 35px;
+        &:nth-of-type(4) {
+          border-right: 1px solid #FFF;
+          padding-right: 18px;
+        }
+        &:nth-of-type(5) {
+          padding-right: 0;
+          padding-left: 17px;
+          color: $orange;
+        }
+      }
+      span {
+        font-size: 10px;
+        color: #FFF;
+      }
+    }
+    .search-right {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 55px;
+    }
+  }
+  .rafting {
+    width: 50%;
+  }
+}

@@ -132,4 +132,39 @@ header {
     padding: 15px;
     background-color: #dc7725; }
 
+.container .search-bar {
+  font-family: 'Open Sans', sans-serif;
+  height: 75px;
+  width: 100%;
+  background-color: #333333;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px; }
+  @media (max-width: 900px) {
+    .container .search-bar {
+      display: none; } }
+  .container .search-bar .search-left {
+    display: flex;
+    width: 60%;
+    padding-left: 55px; }
+    .container .search-bar .search-left h3 {
+      padding-right: 35px; }
+      .container .search-bar .search-left h3:nth-of-type(4) {
+        border-right: 1px solid #FFF;
+        padding-right: 18px; }
+      .container .search-bar .search-left h3:nth-of-type(5) {
+        padding-right: 0;
+        padding-left: 17px;
+        color: #dc7725; }
+    .container .search-bar .search-left span {
+      font-size: 10px;
+      color: #FFF; }
+  .container .search-bar .search-right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 55px; }
+.container .rafting {
+  width: 50%; }
+
 /*# sourceMappingURL=application.css.map */
