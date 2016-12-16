@@ -42,19 +42,68 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFF; }
 
 header {
   display: flex;
+  flex-direction: column;
   height: 650px;
-  background: url(../img/arctic.jpg) top center no-repeat; }
+  width: 100%;
+  background: url(../img/arctic.jpg) right center no-repeat; }
+  @media (max-width: 900px) {
+    header {
+      height: 500px; } }
   header nav {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 75px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 50px;
+    height: 100px;
     color: white; }
     header nav div {
       display: flex; }
+    header nav h1 {
+      font-weight: bolder;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 2.0em; }
+    header nav h3 {
+      padding: 0 10px; }
+  header .header-center {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-self: center;
+    text-align: center;
+    margin: auto; }
+    header .header-center img {
+      height: 100px;
+      width: 40%;
+      align-self: center; }
+    header .header-center h1 {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 5em;
+      padding-bottom: 20px; }
+    header .header-center h2 {
+      font-size: 1.2em;
+      padding-bottom: 10px; }
+
+.small {
+  display: none; }
+  @media (max-width: 900px) {
+    .small {
+      display: block;
+      font-size: 2.0em; } }
+
+@media (max-width: 900px) {
+  .big {
+    display: none; } }
+
+.bottom-border {
+  align-self: center;
+  height: 10px;
+  width: 50%;
+  text-align: center;
+  border-bottom: 5px solid #fff; }
 
 /*# sourceMappingURL=application.css.map */
