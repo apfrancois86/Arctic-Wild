@@ -1,64 +1,165 @@
+
 .container {
-  .search-bar {
-    font-family: 'Open Sans', sans-serif;
-    color: $light-gray;
-    height: 75px;
-    width: 100%;
-    background-color: $dark-gray;
+  width: 100%;
+}
+.search-bar {
+  font-family: 'Open Sans', sans-serif;
+  color: $light-gray;
+  height: 75px;
+  width: 100%;
+  background-color: $dark-gray;
+  display: flex;
+  // justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  @media (max-width:$brk-1) {
+    display: none;
+  }
+  .search-left {
     display: flex;
-    // justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 10px;
-    @media (max-width:$brk-1) {
-      display: none;
-    }
-    .search-left {
-      display: flex;
-      width: 60%;
-      padding-left: 65px;
-      h3 {
-        cursor: pointer;
-        padding-right: 35px;
-        transition: color 0.2s ease-in;
-        &:nth-of-type(4) {
-          border-right: 1px solid #FFF;
-          padding-right: 18px;
-        }
-        &:nth-of-type(5) {
-          padding-right: 0;
-          padding-left: 17px;
-          color: $orange;
-          &:hover {
-            background-color: $light-gray;
-            color: #fff;
-          }
-        }
+    width: 60%;
+    padding-left: 65px;
+    h3 {
+      cursor: pointer;
+      padding-right: 35px;
+      transition: color 0.2s ease-in;
+      &:nth-of-type(4) {
+        border-right: 1px solid #FFF;
+        padding-right: 18px;
       }
-      h3:hover {
-        color:#fff;
-      }
-      span {
-        font-size: 10px;
-        color: $light-gray;
+      &:nth-of-type(5) {
+        padding-right: 0;
+        padding-left: 17px;
+        color: $orange;
         &:hover {
+          background-color: $light-gray;
           color: #fff;
         }
       }
     }
-    .search-right {
-      width: 40%;
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 65px;
-      font-size: 1.2em;
-      font-weight: bolder;
-      cursor: pointer;
-      h2{
-        padding-right: 10px;
+    h3:hover {
+      color:#fff;
+    }
+    span {
+      font-size: 10px;
+      color: $light-gray;
+      &:hover {
+        color: #fff;
       }
     }
   }
-  .rafting {
+  .search-right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 65px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    h2{
+      padding-right: 10px;
+    }
+  }
+}
+.rafting {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background: url(../img/raft.jpg) center center no-repeat;
+  background-size: cover;
+  @media (max-width:$brk-1) {
+    width: 100%;
+  }
+  @media (max-width:$brk-2) {
+    float: none;
+    height: 275px;
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+.base-camp {
+  float: left;
+  @extend %reset;
+  width: 25%;
+  height: 400px;
+  background: url(../img/basecamp.jpg) center center no-repeat;
+  background-size: cover;
+  @media (max-width:$brk-1) {
     width: 50%;
+  }
+  @media (max-width:$brk-2) {
+    float: none;
+    height: 275px;
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+.backpacking {
+  float: left;
+  @extend %reset;
+  width: 25%;
+  height: 400px;
+  background: url(../img/backpacking.jpg) center center no-repeat;
+  background-size: cover;
+  @media (max-width:$brk-1) {
+    width: 50%;
+  }
+  @media (max-width:$brk-2) {
+    float: none;
+    height: 275px;
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+.canoe {
+  float: left;
+  @extend %reset;
+  width: 25%;
+  height: 400px;
+  background: url(../img/canoe.jpg) center center no-repeat;
+  background-size: cover;
+  @media (max-width:$brk-1) {
+    width: 50%;
+  }
+  @media (max-width:$brk-2) {
+    float: none;
+    height: 275px;
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+.photography {
+  float: left;
+  @extend %reset;
+  width: 25%;
+  height: 400px;
+  background: url(../img/photo.jpg) center center no-repeat;
+  background-size: cover;
+  @media (max-width:$brk-1) {
+    width: 50%;
+  }
+  @media (max-width:$brk-2) {
+    float: none;
+    height: 275px;
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+.custom {
+  float: left;
+  @extend %reset;
+  width: 50%;
+  height: 400px;
+  background: url(../img/custom.jpg) center center no-repeat;
+  background-size: cover;
+  @media (max-width:$brk-1) {
+    width: 100%;
+  }
+  @media (max-width:$brk-2) {
+    float: none;
+    height: 275px;
+    width: 90%;
+    margin: 50px auto;
+
   }
 }

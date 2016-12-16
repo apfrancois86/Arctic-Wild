@@ -41,6 +41,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.base-camp, .backpacking, .canoe, .photography, .custom {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   font-family: 'Fjalla One', sans-serif;
   color: #FFF; }
@@ -48,7 +59,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 620px;
   width: 100%;
   background: url(../img/arctic.jpg) right center no-repeat; }
   @media (max-width: 900px) {
@@ -81,7 +92,7 @@ header {
     margin: auto; }
     header .header-center img {
       height: 100px;
-      width: 40%;
+      width: 30%;
       align-self: center; }
     header .header-center h1 {
       font-family: 'Source Sans Pro', sans-serif;
@@ -115,26 +126,30 @@ header {
   margin-top: 20px;
   align-self: center; }
   .play a {
-    padding: 15px;
+    padding: 25px;
     cursor: pointer;
     text-decoration: none;
-    color: #909090;
+    color: #dc7725;
     border-radius: 50%;
     background-color: #FFF;
-    opacity: 0.3;
+    opacity: 0.5;
     width: 100px;
     height: 100px;
-    transition: all 1s ease-in-out; }
+    font-size: 1.5em;
+    transition: all 0.7s ease-in-out; }
   .play a:hover {
-    padding: 30px;
-    font-size: 2em;
-    opacity: 0.6;
+    padding: 40px;
+    font-size: 2.5em;
+    opacity: 0.8;
     overflow: hidden; }
   .play h4 {
     padding: 15px;
     background-color: #dc7725; }
 
-.container .search-bar {
+.container {
+  width: 100%; }
+
+.search-bar {
   font-family: 'Open Sans', sans-serif;
   color: #bdbdb7;
   height: 75px;
@@ -144,34 +159,34 @@ header {
   align-items: flex-end;
   padding-bottom: 10px; }
   @media (max-width: 900px) {
-    .container .search-bar {
+    .search-bar {
       display: none; } }
-  .container .search-bar .search-left {
+  .search-bar .search-left {
     display: flex;
     width: 60%;
     padding-left: 65px; }
-    .container .search-bar .search-left h3 {
+    .search-bar .search-left h3 {
       cursor: pointer;
       padding-right: 35px;
       transition: color 0.2s ease-in; }
-      .container .search-bar .search-left h3:nth-of-type(4) {
+      .search-bar .search-left h3:nth-of-type(4) {
         border-right: 1px solid #FFF;
         padding-right: 18px; }
-      .container .search-bar .search-left h3:nth-of-type(5) {
+      .search-bar .search-left h3:nth-of-type(5) {
         padding-right: 0;
         padding-left: 17px;
         color: #dc7725; }
-        .container .search-bar .search-left h3:nth-of-type(5):hover {
+        .search-bar .search-left h3:nth-of-type(5):hover {
           background-color: #bdbdb7;
           color: #fff; }
-    .container .search-bar .search-left h3:hover {
+    .search-bar .search-left h3:hover {
       color: #fff; }
-    .container .search-bar .search-left span {
+    .search-bar .search-left span {
       font-size: 10px;
       color: #bdbdb7; }
-      .container .search-bar .search-left span:hover {
+      .search-bar .search-left span:hover {
         color: #fff; }
-  .container .search-bar .search-right {
+  .search-bar .search-right {
     width: 40%;
     display: flex;
     justify-content: flex-end;
@@ -179,9 +194,103 @@ header {
     font-size: 1.2em;
     font-weight: bolder;
     cursor: pointer; }
-    .container .search-bar .search-right h2 {
+    .search-bar .search-right h2 {
       padding-right: 10px; }
-.container .rafting {
-  width: 50%; }
+
+.rafting {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background: url(../img/raft.jpg) center center no-repeat;
+  background-size: cover; }
+  @media (max-width: 900px) {
+    .rafting {
+      width: 100%; } }
+  @media (max-width: 625px) {
+    .rafting {
+      float: none;
+      height: 275px;
+      width: 90%;
+      margin: 50px auto; } }
+
+.base-camp {
+  float: left;
+  width: 25%;
+  height: 400px;
+  background: url(../img/basecamp.jpg) center center no-repeat;
+  background-size: cover; }
+  @media (max-width: 900px) {
+    .base-camp {
+      width: 50%; } }
+  @media (max-width: 625px) {
+    .base-camp {
+      float: none;
+      height: 275px;
+      width: 90%;
+      margin: 50px auto; } }
+
+.backpacking {
+  float: left;
+  width: 25%;
+  height: 400px;
+  background: url(../img/backpacking.jpg) center center no-repeat;
+  background-size: cover; }
+  @media (max-width: 900px) {
+    .backpacking {
+      width: 50%; } }
+  @media (max-width: 625px) {
+    .backpacking {
+      float: none;
+      height: 275px;
+      width: 90%;
+      margin: 50px auto; } }
+
+.canoe {
+  float: left;
+  width: 25%;
+  height: 400px;
+  background: url(../img/canoe.jpg) center center no-repeat;
+  background-size: cover; }
+  @media (max-width: 900px) {
+    .canoe {
+      width: 50%; } }
+  @media (max-width: 625px) {
+    .canoe {
+      float: none;
+      height: 275px;
+      width: 90%;
+      margin: 50px auto; } }
+
+.photography {
+  float: left;
+  width: 25%;
+  height: 400px;
+  background: url(../img/photo.jpg) center center no-repeat;
+  background-size: cover; }
+  @media (max-width: 900px) {
+    .photography {
+      width: 50%; } }
+  @media (max-width: 625px) {
+    .photography {
+      float: none;
+      height: 275px;
+      width: 90%;
+      margin: 50px auto; } }
+
+.custom {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background: url(../img/custom.jpg) center center no-repeat;
+  background-size: cover; }
+  @media (max-width: 900px) {
+    .custom {
+      width: 100%; } }
+  @media (max-width: 625px) {
+    .custom {
+      float: none;
+      height: 275px;
+      width: 90%;
+      margin: 50px auto; } }
 
 /*# sourceMappingURL=application.css.map */
