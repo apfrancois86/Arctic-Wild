@@ -2,6 +2,8 @@
 .container {
   width: 100%;
   background-color: rgb(209, 209, 201);
+  display: flex;
+  flex-wrap: wrap;
 }
 .search-bar {
   font-family: 'Open Sans', sans-serif;
@@ -66,7 +68,6 @@
   }
 }
 .rafting {
-  float: left;
   cursor: pointer;
   width: 50%;
   height: 400px;
@@ -80,14 +81,12 @@
     width: 100%;
   }
   @media (max-width:$brk-2) {
-    float: none;
     height: 275px;
     width: 90%;
     margin: 50px auto;
   }
 }
 .base-camp {
-  float: left;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -101,14 +100,12 @@
     width: 50%;
   }
   @media (max-width:$brk-2) {
-    float: none;
     height: 275px;
     width: 90%;
     margin: 50px auto;
   }
 }
 .backpacking {
-  float: left;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -122,14 +119,12 @@
     width: 50%;
   }
   @media (max-width:$brk-2) {
-    float: none;
     height: 275px;
     width: 90%;
     margin: 50px auto;
   }
 }
 .canoe {
-  float: left;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -143,14 +138,12 @@
     width: 50%;
   }
   @media (max-width:$brk-2) {
-    float: none;
     height: 275px;
     width: 90%;
     margin: 50px auto;
   }
 }
 .photography {
-  float: left;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -164,14 +157,12 @@
     width: 50%;
   }
   @media (max-width:$brk-2) {
-    float: none;
     height: 275px;
     width: 90%;
     margin: 50px auto;
   }
 }
 .custom {
-  float: left;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -185,11 +176,9 @@
     width: 100%;
   }
   @media (max-width:$brk-2) {
-    float: none;
     height: 275px;
     width: 90%;
     margin: 50px auto;
-
   }
 }
 .trip {
